@@ -1,4 +1,4 @@
-ansible-webserver-role/
+ansible-role-webserver-automation/
 │
 ├── ansible.cfg
 ├── inventory
