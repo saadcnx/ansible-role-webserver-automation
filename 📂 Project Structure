@@ -1,0 +1,41 @@
+ansible-webserver-role/
+│
+├── ansible.cfg
+├── inventory
+│
+├── roles/
+│   └── webserver/
+│       ├── tasks/
+│       │   └── main.yml
+│       ├── handlers/
+│       │   └── main.yml
+│       ├── templates/
+│       │   ├── index.html.j2
+│       │   └── vhost.conf.j2
+│       ├── vars/
+│       │   └── main.yml
+│       ├── defaults/
+│       │   └── main.yml
+│       ├── meta/
+│       │   └── main.yml
+│       └── README.md
+│
+├── webserver-playbook.yml
+├── custom-webserver-playbook.yml
+├── tagged-webserver-playbook.yml
+├── test-webserver-role.yml
+├── cleanup-webserver.yml
+
+# Create the role directory structure
+mkdir -p roles/webserver/{tasks,handlers,templates,files,vars,defaults,meta}
+
+# Create main.yml files in required directories
+touch roles/webserver/tasks/main.yml
+touch roles/webserver/handlers/main.yml
+touch roles/webserver/vars/main.yml
+touch roles/webserver/defaults/main.yml
+touch roles/webserver/meta/main.yml
+
+# Verify the structure
+tree roles/ || find roles/ -type f
+
