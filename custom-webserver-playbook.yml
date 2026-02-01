@@ -5,10 +5,10 @@
   gather_facts: yes
   
   vars:
-    site_title: "Al Nafi Learning Platform"
+    site_title: "your updated title"
     site_message: "Custom configuration deployed successfully!"
-    webserver_server_name: "learning.alnafi.com"
-    webserver_admin_email: "admin@alnafi.com"
+    webserver_server_name: "ansible-role-webserver-automation"
+    webserver_admin_email: "saadcnx@gmail.com"
   
   roles:
     - webserver
